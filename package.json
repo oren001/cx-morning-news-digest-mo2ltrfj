@@ -1,0 +1,30 @@
+```json
+{
+  "name": "personal-morning-digest",
+  "version": "1.0.0",
+  "description": "Personal morning digest that scrapes news sources, extracts claims, identifies consensus vs controversy",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "keywords": [
+    "news",
+    "digest",
+    "cloudflare-workers",
+    "scraping",
+    "claims-analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "@cloudflare/workers-types": "^4.20241127.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.89.0"
+  }
+}
+```

@@ -1,0 +1,24 @@
+```toml
+name = "personal-morning-digest"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+[env.production]
+workers_dev = false
+route = { pattern = "morning-digest.workers.dev/*", zone_name = "workers.dev" }
+
+[[kv_namespaces]]
+binding = "DIGEST_CACHE"
+id = "your_kv_namespace_id_here"
+
+[vars]
+MAX_URLS = "10"
+CACHE_TTL_SECONDS = "3600"
+API_TIMEOUT_MS = "30000"
+
+[build]
+command = ""
+
+[observability]
+enabled = true
+```
